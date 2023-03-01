@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #form{
+            padding-left: 10px;
+            position: absolute;
+            top: 5%;
+            overflow: auto;
+            left: 13%;
+            height: 86%;
+            width: 75%;
+            overflow: auto;
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        }
+        #form{
+            background-image: url("Images/lab-test.jpg");
+            background-size: 43% 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        #form table tr td input{
+            outline: none;
+            border: none;
+            width: 220px;
+            min-width: 100px;
+            border-bottom: 1px solid grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 10px;
+            height: 20px;
+        }
+        #form select {
+            outline: none;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+            <div id="form">
+              
+                <h1>1. Your Contact Details</h1>
+                <table >
+                    <tr>
+                        <td><input type="text" name="name" placeholder="Full Name" required></td>
+                        <td></t><input type="number" name="id" placeholder="Patient id If Exist"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input style="width: 91%;" type="number" min="6000000000" max="9999999999" placeholder="Number" required></td>
+                        <td><input  type="email" name="email"  placeholder="Enter Email Id" required></td>
+                    </tr>
+                </table>
+                <h1>2. Address </h1>
+                <table>
+                    <tr>
+                        <td><input  type="text" name="HousNo" placeholder="House Number" required></td>
+                        <td><input  type="text" name="Street" placeholder="Street" required></td>
+                    </tr>
+                    <tr>
+                        <td><input  type="text" name="Address" placeholder="Address" required></td>
+                    </tr>
+                </table>
+                <h2>District</h2>
+                <select name="district" id="disctrict">
+                    <option value="">Choose</option>
+                    <option value="Kuttak">Kuttak</option>
+                    <option value="Khordha">Khordha</option>
+                    <option value="Puri">Puri</option>
+                </select>
+                
+                <h1>Choose the Test Type</h1>
+                <table>
+                    <tr>
+                        <td><label for="111">CBC</label></td>
+                        <td><input style="width: 20px;" type="checkbox" id="111" name="TestType"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="111">Complete Urine</label></td>
+                        <td><input style="width: 20px;" type="checkbox" id="111" name="TestType"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="111">Liquid Profine</label></td>
+                        <td><input style="width: 20px;" type="checkbox" id="111" name="TestType"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="111">Thyroid Stimulating Hormone(TSH)</label></td>
+                        <td><input style="width: 20px;" type="checkbox" id="111" name="TestType"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="111">Glucose Test</label></td>
+                        <td><input style="width: 20px;" type="checkbox" id="111" name="TestType"></td>
+                    </tr>
+                </table>
+                
+                <h1>Do you want a hard copy of the report also?</h1>
+                <table>
+                    <tr>
+                        <td><label for="Yes">Yes</label></td>
+                        <td><input style=" width: 60px; " id="Yes" type="radio" value="Yes" name="my-input"></td>
+                        <td><label for="No">No</label></td>
+                        <td><input style="width: 60px;" id="No" type="radio" value="No" name="my-value"></td>
+                    </tr>
+                </table>
+
+                <h1>Select Your Comfortable Date and Time</h1>
+                <input style="width: 27%; height: 30px; background-color: aqua; border: none; outline: none;" type="date"> 
+                <input style="width: 27%;  height: 30px; background-color: aqua;  border: none; outline: none;" type="time"
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
+
